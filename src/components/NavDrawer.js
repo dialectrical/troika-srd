@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter, Switch, Link } from "react-router-dom";
+import { HashRouter, Switch } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import sanityClient from "../client.js";
 import { StyledDrawer, StyledDrawerPaper } from "./styles/StyledDrawer";
 import { StyledTroika } from "./styles/StyledTroika";
 import { StyledNavText } from "./styles/StyledNavText";
 import Divider from "@material-ui/core/Divider";
+import Link from "@material-ui/core/Link";
 
 export const Nav = () => {
   const [allPostsData, setAllPosts] = useState(null);
@@ -42,6 +44,7 @@ export const Nav = () => {
             return (
               <Switch>
                 <Link
+                  component={RouterLink}
                   tag="h5"
                   to={"/" + post.slug.current}
                   key={post.slug.current}
