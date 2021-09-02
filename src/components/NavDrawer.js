@@ -42,8 +42,8 @@ export const Nav = () => {
         </Switch>
         <Switch>
           <Link
-            to={"/advnaced-skills-and-spells"}
-            key={"/advnaced-skills-and-spells"}
+            to={"/advanced-skills-and-spells"}
+            key={"/advanced-skills-and-spells"}
           >
             <StyledNavText variant="h4">Advanced Skills & Spells</StyledNavText>
           </Link>
