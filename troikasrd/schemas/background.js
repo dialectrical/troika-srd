@@ -37,6 +37,11 @@ export default {
       name: "skills",
       title: "Advanced Skills",
       type: "blockContent"
+    },
+    {
+      name: "special",
+      title: "Special",
+      type: "blockContent"
     }
   ],
 
