@@ -46,10 +46,13 @@ export const Nav = () => {
                 <Link
                   component={RouterLink}
                   tag="h5"
+                  underline="none"
                   to={"/" + post.slug.current}
                   key={post.slug.current}
                 >
-                  {post.number}. {post.title}
+                  <StyledNavText>
+                    {post.number}. {post.title}{" "}
+                  </StyledNavText>
                 </Link>
               </Switch>
             );
