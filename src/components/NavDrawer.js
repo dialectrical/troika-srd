@@ -29,6 +29,21 @@ export const Nav = () => {
       );
   });
 
+  if (!allPostsData) {
+    return (
+      <StyledDrawer
+        variant="permanent"
+        anchor="left"
+        PaperProps={{ component: StyledDrawerPaper }}
+      >
+        <StyledTroika variant="h1">TROIKA!</StyledTroika>
+        <StyledTroika variant="h2">SRD</StyledTroika>
+        <Divider />
+        <StyledNavText variant="h5">Loading...</StyledNavText>
+      </StyledDrawer>
+    );
+  }
+
   return (
     <StyledDrawer
       variant="permanent"

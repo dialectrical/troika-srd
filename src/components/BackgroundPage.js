@@ -25,8 +25,6 @@ export const BackgroundPage = () => {
       .catch(console.error);
   }, [slug]);
 
-  console.log(postData);
-
   if (!postData)
     return <StyledTypography variant="h2">Loading...</StyledTypography>;
 
