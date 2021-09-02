@@ -6,4 +6,7 @@ export const StyledTroika = styled(Typography)`
   font-family: Atreyu;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  @media (max-width: 960px) {
+    font-size: 2.5rem;
+  }
 `;
