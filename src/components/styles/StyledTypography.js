@@ -9,9 +9,9 @@ export const StyledTypography = styled(Typography)`
     src: url(${AveriaSansLibre}) format("TrueType");
   }
   padding: 10px;
-  margin-left: 45%;
+  margin-left: 45vw;
   @media (max-width: 960px) {
     text-align: left;
-    margin-left: 20vw;
+    margin-left: 0vw;
   }
 `;

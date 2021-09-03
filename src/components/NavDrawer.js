@@ -67,8 +67,7 @@ export const Nav = () => {
           ModalProps={{ keepMounted: true }}
         >
           <StyledDrawerPaper>
-            <StyledTroika variant="h1">TROIKA!</StyledTroika>
-            <StyledTroika variant="h2">SRD</StyledTroika>
+            <StyledTroika variant="h2">TROIKA! SRD</StyledTroika>
             <Divider />
             <HashRouter>
               {allPostsData &&
