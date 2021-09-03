@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 export const StyledTroika = styled(Typography)`
   color: #0fdbf2;
   @font-face {
-    font-family: Atrey;
+    font-family: Atreyu;
     src: url(../../font/Atreyu.otf);
   }
   font-family: Atreyu;
