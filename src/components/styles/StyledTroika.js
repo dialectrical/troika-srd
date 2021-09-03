@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Typography from "@material-ui/core/Typography";
+import Atreyu from "../font/Atreyu.otf";
 
 export const StyledTroika = styled(Typography)`
   color: #0fdbf2;
