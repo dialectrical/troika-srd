@@ -7,7 +7,6 @@ import { GetBackgrounds } from "./GetBackgrounds";
 
 export const BackgroundPage = () => {
   const [postData, setPostData] = useState(null);
-  const { slug } = useParams();
 
   useEffect(() => {
     sanityClient
