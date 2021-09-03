@@ -15,6 +15,10 @@ export const StyledNavText = styled(Typography)`
   &:hover {
     color: #f21b7f;
   }
+  @media (max-width: 960px) {
+    text-align: left;
+    font-size: 0.75rem;
+  }
 `;
 
 //TODO: figure out how to handle hover to #f21b7f

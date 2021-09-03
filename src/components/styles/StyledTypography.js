@@ -10,4 +10,8 @@ export const StyledTypography = styled(Typography)`
   }
   padding: 10px;
   margin-left: 45%;
+  @media (max-width: 960px) {
+    text-align: left;
+    margin-left: 20vw;
+  }
 `;
