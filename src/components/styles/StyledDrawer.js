@@ -12,7 +12,6 @@ export const StyledDrawerPaper = styled(Paper)`
   padding-left: 20vw;
   border-radius: 0;
   background-color: #f1518d;
-  height: theme.spacing(16);
   @media (max-width: 960px) {
     height: 100vh;
     padding-left: 0;

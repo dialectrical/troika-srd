@@ -28,7 +28,7 @@ export const DocPage = () => {
     return <StyledTypography variant="h2">Loading...</StyledTypography>;
 
   return (
-    <div>
+    <main>
       <StyledTypography variant="h2">{postData.title}</StyledTypography>
       <StyledTypography paragraph>
         <BlockContent
@@ -37,6 +37,6 @@ export const DocPage = () => {
           dataset={sanityClient.clientConfig.dataset}
         />
       </StyledTypography>
-    </div>
+    </main>
   );
 };

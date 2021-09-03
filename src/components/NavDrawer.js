@@ -5,7 +5,9 @@ import sanityClient from "../client.js";
 import { StyledDrawer, StyledDrawerPaper } from "./styles/StyledDrawer";
 import { StyledTroika } from "./styles/StyledTroika";
 import { StyledNavText } from "./styles/StyledNavText";
+import { StyledAppBar } from "./styles/StyledAppBar";
 import Hidden from "@material-ui/core/Hidden";
+import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Divider from "@material-ui/core/Divider";
@@ -54,10 +56,18 @@ export const Nav = () => {
 
   return (
     <nav>
-      <Hidden smUp implementation="css">
-        <IconButton onClick={handleDrawerToggle}>
-          <MenuIcon />
-        </IconButton>
+      <Hidden xlUp implementation="css">
+        <StyledAppBar position="fixed">
+          <Toolbar>
+            <IconButton onClick={handleDrawerToggle}>
+              <MenuIcon />
+            </IconButton>
+            <StyledTroika variant="h2" nowrap>
+              TROIKA! SRD
+            </StyledTroika>
+          </Toolbar>
+        </StyledAppBar>
+        <Toolbar />
         <StyledDrawer
           variant="temporary"
           anchor="left"
@@ -67,7 +77,6 @@ export const Nav = () => {
           ModalProps={{ keepMounted: true }}
         >
           <StyledDrawerPaper>
-            <StyledTroika variant="h2">TROIKA! SRD</StyledTroika>
             <Divider />
             <HashRouter>
               {allPostsData &&
@@ -92,7 +101,7 @@ export const Nav = () => {
           </StyledDrawerPaper>
         </StyledDrawer>
       </Hidden>
-      <Hidden xsDown implementation="css">
+      <Hidden lgDown implementation="css">
         <StyledDrawer
           variant="permanent"
           open
