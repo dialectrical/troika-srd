@@ -17,7 +17,7 @@ export const StyledNavText = styled(Typography)`
   }
   @media (max-width: 960px) {
     text-align: left;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
   }
 `;
 

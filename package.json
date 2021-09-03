@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^2.16.0",
     "@testing-library/jest-dom": "^5.11.4",

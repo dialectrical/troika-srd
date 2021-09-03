@@ -5,9 +5,6 @@ import styled from "styled-components";
 export const StyledDrawer = styled(Drawer)`
   width: 40vw;
   text-align: left;
-  @media (max-width: 960px) {
-    width: 20vw;
-  }
 `;
 
 export const StyledDrawerPaper = styled(Paper)`
@@ -17,7 +14,8 @@ export const StyledDrawerPaper = styled(Paper)`
   background-color: #f1518d;
   height: theme.spacing(16);
   @media (max-width: 960px) {
-    width: 20vw;
+    height: 100vh;
     padding-left: 0;
+    background-color: #f1518d;
   }
 `;
