@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import Typography from "@material-ui/core/Typography";
+import ProximaNW01Reg from "../../font/ProximaNW01Reg.ttf";
 
 export const StyledNavText = styled(Typography)`
   color: #0fdbf2;
-  font-family: Proxima-NW01-Reg;
+  font-family: ProximaNW01-Reg;
+  @font-face {
+    font-family: "ProximaNW01-Reg";
+    src: url(${ProximaNW01Reg}) format("TrueType");
+  }
   font-weight: bold;
   padding: 5px;
   transition: color 0.4s;
