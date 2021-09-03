@@ -15,7 +15,7 @@ const App = () => {
       <Container>
         <HashRouter>
           <Switch>
-            <Route component={BackgroundPage} path="/backgrounds" />
+            <Route component={BackgroundPage} path="/character-creation" />
             <Route component={DocPage} path="/:slug" />
           </Switch>
         </HashRouter>
