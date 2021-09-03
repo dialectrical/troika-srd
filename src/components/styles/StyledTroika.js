@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import Typography from "@material-ui/core/Typography";
-import Atreyu from "../../font/Atreyu.otf";
 
 export const StyledTroika = styled(Typography)`
   color: #0fdbf2;
   @font-face {
     font-family: Atrey;
-    src: url({$Atreyu});
+    src: url(../../font/Atreyu.otf);
   }
   font-family: Atreyu;
   text-align: center;
