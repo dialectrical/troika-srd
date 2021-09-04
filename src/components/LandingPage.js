@@ -3,6 +3,7 @@ import fortle from "../image/fortle.svg";
 import { StyledTypography } from "./styles/StyledTypography";
 import { StyledTroikaSpan } from "./styles/StyledTroikaSpan";
 import { StyledLink } from "./styles/StyledLink";
+import { StyledImage } from "./styles/StyledImage";
 
 export const LandingPage = () => {
   return (
@@ -25,7 +26,7 @@ export const LandingPage = () => {
         presented here for the first time in glorious HTML and contains
         everything needed to play a complete role-playing game capable of
         handling anything from single sessions to decades long campaigns.
-        <img src={fortle} alt="" />
+        <StyledImage src={fortle} alt="" />
       </StyledTypography>
       <StyledTypography variant="subtitle1">
         This SRD is relased for free as a community project and is not
