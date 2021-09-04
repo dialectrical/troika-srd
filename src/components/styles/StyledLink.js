@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Link from "@material-ui/core/link";
+import Link from "@material-ui/core/Link";
 
 export const StyledLink = styled(Link)`
   color: #0fdbf2;
