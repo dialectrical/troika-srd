@@ -3,12 +3,12 @@ import Paper from "@material-ui/core/Paper";
 import styled from "styled-components";
 
 export const StyledDrawer = styled(Drawer)`
-  width: 40vw;
+  width: 4-%;
   text-align: left;
 `;
 
 export const StyledDrawerPaper = styled(Paper)`
-  width: 40vw;
+  width: 40%;
   padding-left: 20vw;
   border-radius: 0;
   background-color: #f1518d;

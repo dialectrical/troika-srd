@@ -6,6 +6,7 @@ import { StyledDrawer, StyledDrawerPaper } from "./styles/StyledDrawer";
 import { StyledTroika } from "./styles/StyledTroika";
 import { StyledNavText } from "./styles/StyledNavText";
 import { StyledAppBar } from "./styles/StyledAppBar";
+import GithubCorner from "react-github-corner";
 import Hidden from "@material-ui/core/Hidden";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -62,9 +63,18 @@ export const Nav = () => {
             <IconButton onClick={handleDrawerToggle}>
               <MenuIcon />
             </IconButton>
-            <StyledTroika variant="h2" nowrap>
-              TROIKA! SRD
-            </StyledTroika>
+            <Link href="/" underline="none">
+              <StyledTroika variant="h2" nowrap>
+                TROIKA! SRD
+              </StyledTroika>
+            </Link>
+            <GithubCorner
+              href="https://github.com/dialectrical/troika-srd"
+              direction="right"
+              octoColor="#f1518d"
+              bannerColor="#0fdbf2"
+              size="60"
+            />
           </Toolbar>
         </StyledAppBar>
         <Toolbar />
@@ -77,7 +87,6 @@ export const Nav = () => {
           ModalProps={{ keepMounted: true }}
         >
           <StyledDrawerPaper>
-            <Divider />
             <HashRouter>
               {allPostsData &&
                 allPostsData.map((post, index) => {
@@ -108,8 +117,16 @@ export const Nav = () => {
           anchor="left"
           PaperProps={{ component: StyledDrawerPaper }}
         >
-          <StyledTroika variant="h1">TROIKA!</StyledTroika>
-          <StyledTroika variant="h2">SRD</StyledTroika>
+          <GithubCorner
+            href="https://github.com/dialectrical/troika-srd"
+            direction="left"
+            octoColor="#f1518d"
+            bannerColor="#0fdbf2"
+          />
+          <Link href="/" underline="none">
+            <StyledTroika variant="h1">TROIKA!</StyledTroika>
+            <StyledTroika variant="h2">SRD</StyledTroika>
+          </Link>
           <Divider />
           <HashRouter>
             {allPostsData &&
