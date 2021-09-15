@@ -7,5 +7,6 @@ export const StyledLink = styled(Link)`
   transition: color 0.4s;
   &:hover {
     color: #f21b7f;
+    text-decoration: none;
   }
 `;

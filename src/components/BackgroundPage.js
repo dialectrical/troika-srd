@@ -25,7 +25,6 @@ export const BackgroundPage = () => {
 
   return (
     <div>
-      {console.log(postData)}
       <StyledTypography variant="h2">{postData.title}</StyledTypography>
       <StyledTypography paragraph>
         <BlockContent
