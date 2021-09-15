@@ -10,11 +10,10 @@ export const StyledDrawer = styled(Drawer)`
 export const StyledDrawerPaper = styled(Paper)`
   width: 40vw;
   padding-left: 20vw;
-  border-radius: 0;
   background-color: #f1518d;
-  @media (max-width: 960px) {
+  border-radius: 0px;
+  @media (max-width: 1600px) {
     height: 100vh;
-    padding-left: 0;
-    background-color: #f1518d;
+    padding-left: 10vw;
   }
 `;

@@ -12,4 +12,8 @@ export const StyledTroika = styled(Typography)`
   text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  @media (max-width: 1040px) {
+    font-size 3rem;
+    margin-bottom: 5px;
+  }
 `;

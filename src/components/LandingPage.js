@@ -32,10 +32,7 @@ export const LandingPage = () => {
         This SRD is relased for free as a community project and is not
         affiliated with Melsonian Arts Council. If you'd like to get invovled or
         contact me, visit this project on{" "}
-        <StyledLink
-          href="https://github.com/dialectrical/troika-srd"
-          underline="none"
-        >
+        <StyledLink href="https://github.com/dialectrical/troika-srd">
           GitHub
         </StyledLink>
         ,{" "}

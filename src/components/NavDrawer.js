@@ -6,6 +6,7 @@ import { StyledDrawer, StyledDrawerPaper } from "./styles/StyledDrawer";
 import { StyledTroika } from "./styles/StyledTroika";
 import { StyledNavText } from "./styles/StyledNavText";
 import { StyledAppBar } from "./styles/StyledAppBar";
+import { StyledLink } from "./styles/StyledLink";
 import GithubCorner from "react-github-corner";
 import Hidden from "@material-ui/core/Hidden";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -57,7 +58,7 @@ export const Nav = () => {
 
   return (
     <nav>
-      <Hidden xlUp implementation="css">
+      <Hidden lgUp implementation="css">
         <StyledAppBar position="fixed">
           <Toolbar>
             <IconButton onClick={handleDrawerToggle}>
@@ -77,7 +78,7 @@ export const Nav = () => {
             />
           </Toolbar>
         </StyledAppBar>
-        <Toolbar />
+        <Toolbar style={{ marginBottom: "10px" }} />
         <StyledDrawer
           variant="temporary"
           anchor="left"
@@ -92,17 +93,16 @@ export const Nav = () => {
                 allPostsData.map((post, index) => {
                   return (
                     <Switch>
-                      <Link
+                      <StyledLink
                         component={RouterLink}
                         tag="h5"
-                        underline="none"
                         to={"/" + post.slug.current}
                         key={post.slug.current}
                       >
                         <StyledNavText>
                           {post.number}. {post.title}{" "}
                         </StyledNavText>
-                      </Link>
+                      </StyledLink>
                     </Switch>
                   );
                 })}
@@ -110,7 +110,7 @@ export const Nav = () => {
           </StyledDrawerPaper>
         </StyledDrawer>
       </Hidden>
-      <Hidden lgDown implementation="css">
+      <Hidden mdDown implementation="css">
         <StyledDrawer
           variant="permanent"
           open
@@ -133,17 +133,16 @@ export const Nav = () => {
               allPostsData.map((post, index) => {
                 return (
                   <Switch>
-                    <Link
+                    <StyledLink
                       component={RouterLink}
                       tag="h5"
-                      underline="none"
                       to={"/" + post.slug.current}
                       key={post.slug.current}
                     >
                       <StyledNavText>
                         {post.number}. {post.title}{" "}
                       </StyledNavText>
-                    </Link>
+                    </StyledLink>
                   </Switch>
                 );
               })}
