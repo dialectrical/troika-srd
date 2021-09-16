@@ -3,6 +3,8 @@
 
 This is a system reference document for the [Troika](https://www.troikarpg.com/) roleplaying game which contains all of the rules text included in the officially released [SRD Google Doc](https://docs.google.com/document/d/1haUfSVekt2gNab3V2CrL1Pg_sZ-ZlskphwXmSnGT9aw/edit).
 
+Built with React.
+
 The SRD is currently deployed using Netlify and can be viewed [here](https://troika-srd.netlify.app/#/). Feel free to use it for your own games of Troika!
 
 ## Contributing
