@@ -39,7 +39,7 @@ export const Nav = () => {
           })
         )
       );
-  });
+  }, []);
 
   if (!allPostsData) {
     return (
